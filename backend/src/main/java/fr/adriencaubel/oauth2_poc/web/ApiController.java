@@ -14,4 +14,9 @@ public class ApiController {
     public String privateApi() {
         return "private";
     }
+
+    @GetMapping("/me")
+    public MeDto me() {
+        return new MeDto("adrien", "caubel");
+    }
 }
